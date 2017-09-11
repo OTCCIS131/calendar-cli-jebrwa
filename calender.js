@@ -1,4 +1,7 @@
 const M = require('moment')
-const MR = require('moment-range')
-const L = require('lodash')
-const C = require('chalk')
+const MomentRange = require('moment-range')
+const _ = require('lodash')
+const chalk = require('chalk')
+
+let year = moment().range('year') 
+
