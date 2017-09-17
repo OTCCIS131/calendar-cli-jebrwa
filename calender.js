@@ -7,13 +7,11 @@ const moment = MomentRange.extendMoment(M)
 
 let year = moment().range('year')
 
-for(const month of year.by('month'))
-    {
-    _.forEach(Array.from(year.by('months')), month => {
+_.forEach(Array.from(year.by('months')), month => {
     console.log(_.pad(month.format('MMMM'), 26, ' '))
-    console.log('S   M   T   W   Th  F   S   ')  
-
-    let days = Array.from(month.by('days'))
+    console.log('S   M   T   W   Th  F   S   ')
+    console.log()
+    let days = Array.from(month.dayOfYear('days'))
     let paddeddays = _.map(days, day=> {
         let date = day.date()
         if(day.month() == 9 && day.date() == 10) {
@@ -21,18 +19,11 @@ for(const month of year.by('month'))
 }
 return_.padEnd(date, 2, '' )
 })
+let monthRange = month.range('month')
+let firstDay = monthRange.start.day()
 
-//_.chian(days)
-//.map(day => {
-//    console.log(day)
+Array.from(month.dayOfYear('days'))
+
+console.log(firstDay)
+    
 })
-
-
-   let monthRange = month.range('month')
-    let firstDay = monthRange.start.day()
-
-    Array.from(month.by('days'))
-
-    console.log(firstDay)
-})
-    }

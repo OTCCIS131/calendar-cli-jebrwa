@@ -1,7 +1,7 @@
 {
   "name": "calender",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cander",
   "main": "index.js",
   "dependencies": {
     "chalk": "^2.1.0",
@@ -14,5 +14,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OTCCIS131/calendar-cli-jebrwa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OTCCIS131/calendar-cli-jebrwa/issues"
+  },
+  "homepage": "https://github.com/OTCCIS131/calendar-cli-jebrwa#readme"
 }
