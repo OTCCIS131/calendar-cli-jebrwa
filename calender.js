@@ -33,11 +33,18 @@ for (const month of year. by('month'))
             date = chalk.magenta(date)
    
         }
-        
+        return _.padStart(date, 2 )
         return _.padEnd(date, 2 )
 
     })
-    
+
+        for (i = 0; i < month.day(); i++)
+            
+            {
+            paddedDays.unshift('  ');
+
+            }
+
     paddedDays = _.chunk(paddedDays, 7);
     paddedDays.forEach(week => {console.log(week.join("  "))})
 
