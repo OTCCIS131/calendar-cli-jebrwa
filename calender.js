@@ -3,6 +3,8 @@ const M = require("moment")
 const chalk = require('chalk')
 const MomentRange = require('moment-range')
 
+var emoji = require('node-emoji')
+
 const moment = MomentRange.extendMoment(M)
 
 let year = moment().range('year')
@@ -51,5 +53,3 @@ for (const month of year. by('month'))
 
 }
 
-
-[]
