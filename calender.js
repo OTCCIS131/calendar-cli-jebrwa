@@ -22,7 +22,7 @@ for (const month of year. by('month'))
     {
        
         let date = day.date()
-        if (day.month() == 9 && day.date() == 10) 
+        if (day.month() == 8 && day.date() == 10) 
        
         {
             date = chalk.red(date)
